@@ -1,8 +1,8 @@
 // Initialize the map
 function initMap() {
     const mapOptions = {
-        center: { lat: 20.5937, lng: 78.9629 }, // Replace with the coordinates of your area
-        zoom: 14, // Adjust the zoom level as needed
+        center: { lat: 20.5937, lng: 78.9629 }, //the coordinates of  area
+        zoom: 14, // zoom level 
     };
 
     const map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -15,13 +15,13 @@ function initMap() {
         fillColor: '#FF0000',
         fillOpacity: 0.35,
         map: map,
-        center: { lat: 20.5937, lng: 78.9629 }, // Replace with your area's coordinates
-        radius: 1000, // Adjust the radius in meters as needed
+        center: { lat: 20.5937, lng: 78.9629 }, // area's coordinates
+        radius: 1000, //  the radius in meters 
     });
 
-    // Add a custom marker to the accident-prone area
+    // custom marker to the accident-prone area
     const marker = new google.maps.Marker({
-        position: { lat: 21.4990, lng: 83.8833 }, // Replace with your marker's coordinates
+        position: { lat: 21.4990, lng: 83.8833 }, // marker's coordinates
         map: map,
         title: 'Accident-Prone Area',
     });
